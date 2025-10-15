@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import TradeDetail from "./pages/TradeDetail";
 import AnalisisIA from "./pages/AnalisisIA";
+import MisReglas from "./pages/MisReglas";
 import { ThemeProvider } from "./context/ThemeProvider";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/trades/:id" element={<TradeDetail />} />
             <Route path="/analisis" element={<AnalisisIA />} />
+            <Route path="/reglas" element={<MisReglas />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
